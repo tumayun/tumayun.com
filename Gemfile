@@ -2,12 +2,10 @@
 source 'http://ruby.taobao.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.0.rc1'
-
-
+gem 'rails', '4.0.0'
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.0.rc1'
+gem 'sass-rails', '~> 4.0.0'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -25,7 +23,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 1.0.1'
+gem 'jbuilder', '>= 1.5.1'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
@@ -44,17 +42,16 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-gem 'devise', '~> 3.0.0.rc'
-gem 'simple_form', '~> 3.0.0.rc'
-gem 'mongoid', :git => 'git://github.com/mongoid/mongoid.git',
-               :branch => 'master'
+gem 'devise', '>= 3.1.0'
+gem 'simple_form', '>= 3.0.0'
+gem 'mongoid', github: 'mongoid/mongoid', branch: 'master'
 gem 'rails_config', '~> 0.3.3'
-gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
+gem 'twitter-bootstrap-rails', '>= 2.2.8'
 
 group :development, :test do
-  gem 'debugger'
-  gem "rspec", "~> 2.13.0"
-  gem "rspec-rails", "~> 2.13.2"
-  gem "factory_girl", "~> 4.2.0"
-  gem "factory_girl_rails", "~> 4.2.1"
+  gem "rspec"
+  gem "rspec-rails"
+  gem "factory_girl_rails"
+  gem 'pry-debugger'
+  gem 'pry-rails'
 end
